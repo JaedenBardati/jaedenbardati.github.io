@@ -1,14 +1,3 @@
 # jaedenbardati.github.io
 
-
-This is the repo for my personal website. 
-
-Currently under construction . . .
-
-               O
-       /~~~|#|]|=\|---\__
-     |-=_____________  |\\ ,             O       O
-    I|_/,-.-.-.-.-,-.\_|='(             T/\     /\=,---.
-       ( o )( o )( o )     \            U /\   /\   `O'    
-        `-'-'-'-'-`-'
-       
+Hi, I'm Jaeden Bardati. This is my personal website that I coded using HTML, CSS, Javascript, and Bootstrap. It is still under construction.
