@@ -12,12 +12,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
     */
     $(".typed").each(function(i, obj) {
+        loop_bool = obj.getAttribute('loop')
+        loop_bool = loop_bool === null || loop_bool === "true" ? true : false
         new Typed('.typed', {
             strings: obj.getAttribute('typed-items').split(','),
             typeSpeed: 75,
             backSpeed: 40,
             backDelay: 1000,
-            loop: true
+            loop: loop_bool     // default to loop if no loop is specified
         });
     });
     
