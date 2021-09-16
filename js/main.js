@@ -1,5 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function(event) {
+$(document).ready(function() {
     
     /* -- Typed.js integration --
     
