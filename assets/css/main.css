@@ -4002,3 +4002,56 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+
+
+
+/* Footnotes */
+/* Based on Kitty Giraudel's code: https://www.sitepoint.com/accessible-footnotes-css/ */
+
+.footnotes {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #dfdfdf;
+    font-size: 0.8em;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+}
+
+article {
+    counter-reset: footnotes;
+}
+
+[aria-describedby="footnote-label"] {
+    counter-increment: footnotes;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    outline: none;
+}
+
+[aria-describedby="footnote-label"]::after {
+    content: '[' counter(footnotes) ']';
+    vertical-align: super;
+    font-size: 0.5em;
+    margin-left: 2px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+[aria-describedby="footnote-label"]:focus::after {
+    outline: thin dotted;
+    outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+    font-size: 0.8em;
+}
+
+.footnotes :target {
+    background: yellow;
+}
