@@ -4055,3 +4055,21 @@ article {
 .footnotes :target {
     background: yellow;
 }
+
+
+
+
+
+
+/* Extra padding on spotlight stuff */
+.xtra-padded-image {
+    height:90vh; width:100%; /* Default (Desktop) */
+}
+
+@media (max-width: 1300px) {
+    .xtra-padded-image {
+        height:100%; width:100%;
+    }
+}
+
+
